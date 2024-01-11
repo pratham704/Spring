@@ -1,4 +1,4 @@
-FROM openjdk:17-oracle
+FROM openjdk:21-oracle
 
 ARG JAR_FILE=target/NewPrathams-0.0.1-SNAPSHOT.jar
 
