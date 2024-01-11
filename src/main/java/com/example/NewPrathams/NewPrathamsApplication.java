@@ -14,6 +14,12 @@ public class NewPrathamsApplication {
 	@RestController
 	public static class HeyController {
 
+
+		@GetMapping("/")
+		public String emptybro() {
+			return "wassup";
+		}
+
 		@GetMapping("/hey")
 		public String getHey() {
 			return "Pratham here";
