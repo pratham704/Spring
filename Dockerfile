@@ -1,5 +1,7 @@
 FROM openjdk:21-oracle
 
-COPY target/NewPrathams-0.0.1-SNAPSHOT.jar /app/app.jar
+ARG JAR_FILE=target/*.jar
+
+COPY target/NewPrathams-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "NewPrathams-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "/app.jar"]
