@@ -1,5 +1,5 @@
 FROM openjdk:21-oracle
-
+#good
 ARG JAR_FILE=target/*.jar
 
 COPY target/NewPrathams-0.0.1-SNAPSHOT.jar app.jar
